@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>一分钟看懂单身狗</title>
+		<META name="viewport" id="viewport" content="minimal-ui,width=device-width,height=device-height,target-densitydpi=medium-dpi,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+			<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<script type="text/javascript" src="https://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+
+		<script type="text/javascript">
+        //判断访问终端
+        var browser={
+            versions:function(){
+                var u = navigator.userAgent, app = navigator.appVersion;
+                return {
+                    trident: u.indexOf('Trident') > -1, //IE内核
+                    presto: u.indexOf('Presto') > -1, //opera内核
+                    webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,//火狐内核
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                    android: u.indexOf('Android') > -1 || u.indexOf('Adr') > -1, //android终端
+                    iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
+                    iPad: u.indexOf('iPad') > -1, //是否iPad
+                    webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+                    weixin: u.indexOf('MicroMessenger') > -1, //是否微信 （2015-01-22新增）
+                    qq: u.match(/\sQQ/i) == " qq" //是否QQ
+                };
+            }(),
+            language:(navigator.browserLanguage || navigator.language).toLowerCase()
+        }
+    </script>
+	</head>
+	<body>
+		<audio id="mp31" src="audio/1.mp3" autoplay="autoplay" loop="loop" ></audio>
+		<div class="row">
+			<div class="content" id="c1">
+				<div class="img1">
+					<img src="img/1.jpg"/>
+				</div>
+				<div class="img2">
+					<img id="dog" src="img/dog/1.png"/>
+				</div>
+				<div class="img3" id="img3"> 
+					<span id="loadingImg" style="float: left;width:1rem;height: 1rem;background: #000; margin: 4px;"></span>
+				</div>
+				<div class="img4">
+					<img src="img/4.png"/>
+				</div>
+			</div>
+
+			<div class="content2" style="display: none" id="c2">
+				<div class="img5">
+					<img src="img/5.png" id="dianji1"/>
+				</div>
+				<div class="img6">
+					<img id="shou" src="img/6.png"/>
+				</div>
+				<div class="img7">
+					<img src="img/pg/1.png" id="pg"/>
+				</div>
+				<div class="img8">
+					<img src="img/8.jpg" id="dianji3"/>
+				</div>
+			</div>
+
+			<div class="banner" id="c3" style="display: none">
+          <div class="pop" style="display: none" id="c4">
+            <img src="img/tell.png">
+          </div>
+          <div class="bg_top1">
+            <img src="img/bg_top1.jpg">
+          </div>
+          <div class="bg_top2">
+            <img src="img/bg_top2.jpg">
+          </div>
+          <div class="bg_top3">
+            <img src="img/bg_top3.png">
+            <div class="btn2">
+               <div class="bzxg">
+                   <img src="img/bzxg.png" id="go">
+               </div>
+               <div class="520red">
+                    <img src="img/520red.png" id="love">
+               </div>
+           </div>
+          </div>
+          
+        </div>
+         <div class="mask" id="mask" style="display: none"></div>
+		<div id="videodiv" style="position:relative">
+			<video id="video" width="1" height="1" x-webkit-airplay="allow" src="http://www.mirun.net/yl520/4.mp4" preload="auto" webkit-playsinline="true" playsinline="true" x5-video-player-type="h5" x5-video-player-fullscreen="true" x5-video-orientation="portraint" style="object-fit:fill;"></video>
+			<img id="tiaoguo" src="img/btn_tiao.png" style="position:absolute;width:20%;right:1%;bottom: 1%;opacity:0.4;display:none;">
+		</div>
+
+	</body>
+
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+	var i = 1;
+	var xx=3;
+	audioAutoPlay('mp31');
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?e02f6b6c93de8dab7c93f7619c17d020";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</html>
